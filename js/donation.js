@@ -17,7 +17,7 @@
 
 // card-1
 document.getElementById('donate-btn').addEventListener('click',function(event){
-    event.preventDefault();
+   // event.preventDefault();
     
     const donationMoney=parseFloat(document.getElementById('donation').value);
 
@@ -29,7 +29,7 @@ document.getElementById('donate-btn').addEventListener('click',function(event){
     const newDonation=afterDonationMoney+donationMoney;
     
     document.getElementById('after-donation').innerText=newDonation;
-    alert('Donated Successfully');
+
 //history
 const div =document.createElement('div');
 div.classList.add('my-4');
@@ -41,11 +41,18 @@ let date=new Date();
  </p>
  
  `;
+ 
  document.getElementById('history-page').appendChild(div);
+ //bonus
+ my_modal_5.showModal();
+ 
 
 }
     else{
         alert('Try to do again');
+       // document.getElementById('my_modal_5').classList.add('hidden');
+        
+        
     }
 })
 
@@ -62,7 +69,6 @@ document.getElementById('donate-btn-2').addEventListener('click',function(event)
     const afterDonationMoney= parseFloat(document.getElementById('after-donation-2').innerText);
     const newDonation=afterDonationMoney+donationMoney;
     document.getElementById('after-donation-2').innerText=newDonation;
-    alert('Donated Successfully');
 
     //history
     const div =document.createElement('div');
@@ -72,9 +78,12 @@ document.getElementById('donate-btn-2').addEventListener('click',function(event)
     <p class="border rounded-lg font-bold p-4">${donationMoney} Taka is donated for Flood Relief in Feni,Bangladesh<br><br>
  <span class="font-normal">Date: ${date}</span></p>`;
     document.getElementById('history-page').appendChild(div);
+    
+    my_modal_6.showModal();
+ 
 }
     else{
-        alert('Try to do again');
+        alert('Try to do again');        
     }
 })
 
@@ -90,7 +99,7 @@ document.getElementById('donate-btn-3').addEventListener('click',function(event)
     const afterDonationMoney= parseFloat(document.getElementById('after-donation-3').innerText);
     const newDonation=afterDonationMoney+donationMoney;
     document.getElementById('after-donation-3').innerText=newDonation;
-    alert('Donated Successfully');
+    // alert('Donated Successfully');
      //history
     const div =document.createElement('div');
     div.classList.add('my-4');
@@ -99,9 +108,12 @@ document.getElementById('donate-btn-3').addEventListener('click',function(event)
      <p class="border rounded-lg font-bold p-4">${donationMoney} Taka is donated for Aid for Injured in the Quota Movement,Bangladesh<br><br>
  <span class="font-normal">Date: ${date}</span></p>`;
      document.getElementById('history-page').appendChild(div);
+     my_modal_7.showModal();
+ 
 
 }
     else{
         alert('Try to do again');
+             
     }
 })
