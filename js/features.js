@@ -14,5 +14,5 @@ document.getElementById('donationn').addEventListener('click',function(){
     document.getElementById('history').classList.remove('bg-lime-300');
 })
 document.getElementById('blog').addEventListener('click',function(){
-    window.location.href='./blog.html';
-})
+    window.location.href='blog.html';
+    })
